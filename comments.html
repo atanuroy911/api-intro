@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-slate-100">
+    <header class="m-7 md:m-8">
+        <h1 class="text-4xl md:text-5xl text-center text-teal-500 font-semibold">Welcome to Haat Bazaar</h1>
+    </header>
+    <main>
+        <section class="m-8">
+            <div class="mx-auto bg-white w-full md:w-11/12 lg:w-1/2 rounded-xl">
+                <div class="p-8">
+                    <div class="my-2">
+                        <h4 class="text-2xl font-bold">John Doe</h4>
+                        <h6>September 16, 2022</h6>
+                    </div>
+                    <div class="my-2">
+                        <img src="https://indyfruit.com/wp-content/uploads/2017/08/IndyFruit-GridProducts-ConventionalProduce-300x300.jpg"
+                            alt="" class="w-full">
+                    </div>
+                    <div>
+                        <a href="" class="mr-1 text-blue-500 p-1">Like</a><a href=""
+                            class="mr-1 text-blue-500 p-1">Edit</a><a href=""
+                            class="mr-1 text-blue-500 p-1">Delete</a><a href=""
+                            class="mr-1 text-blue-500 p-1">Comment</a>
+                    </div>
+                    <div id="comments" class="my-4">
+                        <h4 class="text-xl text-slate-600 font-semibold pb-3">Comments</h4>
+                        <div class="bg-slate-300 p-3 rounded-lg mb-3">
+                            <h5 class="font-semibold">John Doe</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, sapiente!</p>
+                            <a href="" class="mr-1 text-blue-500 p-1">Like</a><a href=""
+                            class="mr-1 text-blue-500 p-1">Reply</a>
+                        </div>
+                    </div>
+                    <button onclick="getComments()" class="text-blue-500">Load More</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/comments.js"></script>
+</body>
+
+</html>
